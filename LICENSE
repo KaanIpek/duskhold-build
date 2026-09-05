@@ -1,0 +1,243 @@
+DUSKHOLD — PROPRIETARY SOFTWARE LICENCE
+=======================================
+
+Copyright (c) 2026 Kaan Ipek. All rights reserved.
+
+"Duskhold" is proprietary software. It is NOT open source, and it is NOT free
+software. This file is the whole of the permission you have. If a right is not
+granted below in writing, it is withheld.
+
+
+0. SUMMARY (not part of the licence — read the clauses)
+------------------------------------------------------
+You may look at this repository. You may not copy it, build it, ship it, modify
+it, sell it, or publish anything derived from it. The third-party art, audio,
+fonts and libraries listed in NOTICE.md keep their own licences and are not
+covered by these restrictions.
+
+
+1. DEFINITIONS
+--------------
+"Author" means Kaan Ipek, the copyright holder.
+
+"The Work" means everything in this repository and in any repository, branch,
+archive or artefact derived from it, including but not limited to: the C# source
+under Assets/Duskhold/Scripts and Assets/Editor; the forge, drill and harness
+code; ScriptableObject data, balance tables, map data and level definitions; the
+custom shaders (Duskhold/HealthBar, Duskhold/Marker, Duskhold/VertexLit); the
+generated UI sprites, icons, map thumbnails and portraits; the original music
+beds; all Turkish and English game text; the design documents under docs/; the
+build and release tooling under Tools/ and .github/; and every compiled or
+intermediate output produced from any of it — Unity player builds, Android App
+Bundles and APKs, iOS Xcode projects, IL2CPP-generated C++, .ipa files and
+TestFlight or store builds.
+
+"Third-Party Components" means the separately licensed material listed in
+NOTICE.md, which is redistributed inside the Work under its own terms and is NOT
+owned by the Author.
+
+"You" means any person or entity that reads, receives or otherwise obtains a
+copy of any part of the Work.
+
+
+2. OWNERSHIP
+------------
+The Work, excluding the Third-Party Components, is the exclusive property of the
+Author and is protected by copyright and other intellectual property law. No
+title, ownership or interest in the Work transfers to You under any
+circumstances.
+
+
+3. NO LICENCE IS GRANTED
+------------------------
+No right to use, copy, reproduce, modify, adapt, translate, merge, publish,
+distribute, sublicense, rent, lease, lend, sell or otherwise exploit the Work is
+granted, whether expressly, by implication, by estoppel or otherwise.
+
+The Author has not placed the Work under any open-source, free-software,
+Creative Commons or similar licence, and the absence of such a licence file is
+not an oversight.
+
+
+4. EXPRESSLY PROHIBITED
+-----------------------
+Without the Author's prior written permission, You must not:
+
+  (a) copy, fork, mirror, re-host or otherwise reproduce the Work or any part of
+      it, in source or compiled form;
+
+  (b) modify the Work, or create derivative works, ports, conversions, reskins,
+      "inspired-by" builds or asset flips based on it;
+
+  (c) distribute, publish, share, sell, licence, sublicense, or make the Work
+      available to any third party, including by uploading it to a code host, a
+      file-sharing service, a game portal, an asset store or a model or dataset
+      repository;
+
+  (d) submit the Work, or any build, derivative or substantial part of it, to
+      the Apple App Store, Google Play, or any other application store,
+      marketplace, storefront or distribution channel, under any name;
+
+  (e) reverse engineer, decompile, disassemble, deobfuscate, dump the IL2CPP
+      metadata of, extract assets from, or otherwise attempt to derive the
+      source code, data or assets of any build of the Work, except to the exact
+      extent that such an act cannot lawfully be prohibited under mandatory law
+      applicable to You, and then only within the limits of that law;
+
+  (f) remove, obscure or alter any copyright, licence, trade mark or attribution
+      notice in the Work, including this file, NOTICE.md and the third-party
+      licence files that ship beside the assets;
+
+  (g) use the Work, or any part of it, as training data for, or as input to, a
+      machine-learning system whose outputs are made available to anyone other
+      than You;
+
+  (h) use the Work commercially in any form.
+
+
+5. VIEWING IS NOT A GRANT
+-------------------------
+If this repository, or any mirror, branch, archive, artefact, pull request,
+gist, cache or search-engine copy of it, is or becomes readable by You — whether
+because it was published publicly, shared with You, leaked, or made visible by
+mistake — that visibility grants You no rights whatsoever beyond reading it.
+
+In particular, reading the Work for reference or study does not permit You to
+copy any part of it into another project, and it does not make the Work public
+domain, abandonware, or open source.
+
+
+6. THIRD-PARTY COMPONENTS
+-------------------------
+Sections 3 and 4 do NOT apply to the Third-Party Components. Each of them
+remains under its own licence, granted by its own copyright holder, and nothing
+in this file restricts, extends or replaces those licences.
+
+The complete, verified inventory is in NOTICE.md. In outline, and as recorded in
+the licence files that ship in this tree:
+
+  * 3D models, animations, sound effects and music jingles by
+    Kay Lousberg (KayKit), Kenney and Quaternius — Creative Commons Zero 1.0
+    (CC0), public domain dedication. Licence texts:
+        Assets/Duskhold/Art/Buildings/Builder/KayKit_Builder_License.txt
+        Assets/Duskhold/Art/Characters/Adventurers/KayKit_Adventurers_License.txt
+        Assets/Duskhold/Art/Characters/Animations/KayKit_Animations_License.txt
+        Assets/Duskhold/Art/Characters/Skeletons/KayKit_Skeletons_License.txt
+        Assets/Duskhold/Art/Hex/KayKit_Hexagon_License.txt
+        Assets/Duskhold/Art/Ships/Kenney-License.txt
+        Assets/Duskhold/Art/Creatures/Quaternius_License.txt
+        Assets/Duskhold/Audio/SFX/Kenney_ImpactSounds_License.txt
+        Assets/Duskhold/Audio/SFX/Kenney_InterfaceSounds_License.txt
+        Assets/Duskhold/Audio/SFX/Kenney_RPGAudio_License.txt
+        Assets/Duskhold/Audio/Music/Kenney_MusicJingles_License.txt
+
+  * Fonts Cinzel (Natanael Gama / NDISCOVER) and Barlow (Jeremy Tribby), and
+    Liberation Sans as shipped with TextMesh Pro — SIL Open Font License 1.1.
+    Under the OFL these fonts may be bundled and redistributed inside this game
+    provided the licence text travels with them, they are not sold on their own,
+    and no modified version reuses the reserved font names. Licence texts:
+        Assets/Duskhold/UI/Fonts/Cinzel_OFL.txt
+        Assets/Duskhold/UI/Fonts/Barlow_OFL.txt
+        Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+        Assets/Duskhold/Legal/Fonts_OFL-1.1.txt
+
+  * Google Mobile Ads Unity plugin 11.3.0 — Apache License 2.0
+        Assets/GoogleMobileAds/LICENSE
+    External Dependency Manager for Unity 1.2.188 — Apache License 2.0
+        Assets/ExternalDependencyManager/Editor/LICENSE
+    The underlying Google Mobile Ads native SDKs and the User Messaging
+    Platform, pulled in at build time by CocoaPods and Gradle, are closed-source
+    binaries under Google's own terms — see NOTICE.md.
+
+  * Sign in with Apple Unity Plugin 1.5.0 by Daniel Lupiañez Casares —
+    MIT License
+        Assets/Duskhold/Legal/AppleSignIn_MIT.txt
+
+  * websocket-sharp (c) 2010-2021 sta.blockhead — MIT License, and
+    unity-websocket-webgl (c) 2018 Jiri Hybek — Apache License 2.0, both
+    vendored inside the Unity Gaming Services "wire" package
+        Assets/Duskhold/Legal/UnityServicesWire_ThirdParty.txt
+        Assets/Duskhold/Legal/Apache-2.0.txt
+
+  * Unity Engine 6000.4.8f1 and the Unity packages listed in
+    Packages/manifest.json — Unity's own terms: the Unity Companion License,
+    the Unity Package Distribution License, or the Unity Terms of Service, per
+    package. Use of the engine is governed by the Author's Unity licence
+    agreement and confers no rights on You.
+
+The Author claims no copyright in the Third-Party Components. Where a
+third-party licence would permit You to do something with a component that
+section 4 forbids for the Work, the third-party licence wins for that component
+alone — but extracting a component out of a build of the Work in order to reach
+it is still prohibited by section 4(e).
+
+
+7. NAME, BRANDING AND ART DIRECTION
+-----------------------------------
+"Duskhold", the Duskhold app icon, the Duskhold logotype and wordmark, the store
+artwork, the champion and enemy names, the map and chapter names, and the game's
+written text are the Author's. Nothing in this licence grants any trade mark
+right or any right to use these names or marks, and the fact that the underlying
+3D models are CC0 does not make Duskhold's arrangement, naming, colouring, level
+design or presentation of them free to reuse.
+
+
+8. BUILD ARTEFACTS AND THE PIPELINE REPOSITORY
+----------------------------------------------
+Some build artefacts of the Work transit a separate public repository so that
+free macOS build capacity can be used. Those artefacts are encrypted, and they
+remain part of the Work under this licence in encrypted and decrypted form
+alike. Possession of an encrypted artefact grants no right to decrypt it, and
+attempting to decrypt, crack or bypass that encryption is prohibited by
+section 4(e).
+
+
+9. CONTRIBUTIONS
+----------------
+The Author is not soliciting contributions. Any patch, issue, translation,
+asset, or other material You nonetheless submit for inclusion in the Work is
+provided to the Author on a perpetual, worldwide, irrevocable, royalty-free
+basis to use as the Author sees fit, and You confirm You have the right to give
+it. If You are not willing to do that, do not submit it.
+
+
+10. NO WARRANTY
+---------------
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
+
+
+11. LIMITATION OF LIABILITY
+---------------------------
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHOR SHALL NOT BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE WORK OR ANY USE OR
+OTHER DEALINGS IN IT.
+
+Nothing in sections 10 and 11 excludes liability that cannot lawfully be
+excluded.
+
+
+12. TERMINATION AND ENFORCEMENT
+-------------------------------
+Any breach of this licence terminates whatever limited permission You had
+immediately and automatically, and You must destroy every copy of the Work in
+Your possession. The Author reserves every right and remedy available under
+copyright, trade mark, contract and unfair-competition law, including injunctive
+relief and takedown requests to code hosts, application stores and hosting
+providers.
+
+If any clause of this licence is held unenforceable, the rest stays in force and
+the unenforceable clause is narrowed to the minimum extent needed to make it
+enforceable.
+
+
+13. PERMISSION AND CONTACT
+--------------------------
+Written permission for anything this licence withholds may be requested from:
+
+    Kaan Ipek — rld.ranger07@gmail.com
+
+Nothing short of the Author's written agreement is permission. Silence is not
+permission.
