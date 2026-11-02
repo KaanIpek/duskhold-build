@@ -99,11 +99,19 @@ on:
         description: 'Fail unless the exported app carries com.apple.developer.applesignin (set false ONLY for a pre-accounts emergency build)'
         required: false
         default: 'true'
+      runner:
+        description: 'Runner image. xcode-27 carries Xcode 27.1 = the iOS 27.1 SDK, which iPhone Duo needs to run an app full screen'
+        required: false
+        default: 'xcode-27'
+      xcode_app:
+        description: 'Xcode to select (an /Applications name). Pinned to a release: the newest on xcode-27 is a Release Candidate'
+        required: false
+        default: 'Xcode_27.1.app'
 
 jobs:
   archive:
     name: Archive, sign, upload to TestFlight
-    runs-on: macos-latest
+    runs-on: ${{ inputs.runner || 'xcode-27' }}
     permissions:
       contents: read          # gh release download needs this and nothing more
     steps:
@@ -216,7 +224,13 @@ jobs:
       - name: Select the newest Xcode
         run: |
           ls -d /Applications/Xcode*.app
-          NEWEST=$(ls -d /Applications/Xcode*.app | sort -V | tail -1)
+          WANT="/Applications/${{ inputs.xcode_app }}"
+          if [ -n "${{ inputs.xcode_app }}" ] && [ -d "$WANT" ]; then
+            NEWEST="$WANT"
+          else
+            echo "::warning::${{ inputs.xcode_app }} is not on this runner - taking the newest Xcode"
+            NEWEST=$(ls -d /Applications/Xcode*.app | sort -V | tail -1)
+          fi
           echo "selecting $NEWEST"
           sudo xcode-select -s "$NEWEST/Contents/Developer"
           xcodebuild -version
