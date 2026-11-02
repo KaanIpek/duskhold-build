@@ -107,6 +107,10 @@ on:
         description: 'Xcode to select (an /Applications name). Pinned to a release: the newest on xcode-27 is a Release Candidate'
         required: false
         default: 'Xcode_27.1.app'
+      min_ios:
+        description: 'IPHONEOS_DEPLOYMENT_TARGET for every target, pods included. Xcode 27.1 builds nothing below 15.0 (run 41427240116 failed on the 12.0 Google pods); iOS 15 runs on every device iOS 14 did'
+        required: false
+        default: '15.0'
 
 jobs:
   archive:
@@ -305,6 +309,7 @@ jobs:
             -destination 'generic/platform=iOS' \
             -archivePath "$RUNNER_TEMP/Duskhold.xcarchive" \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
+            ${{ inputs.min_ios && format('IPHONEOS_DEPLOYMENT_TARGET={0}', inputs.min_ios) || '' }} \
             archive
 
       # Every upload-stage rejection is visible in the archive in two seconds. ITMS errors
